@@ -52,7 +52,7 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-[#0a0e27]/80 backdrop-blur-lg shadow-lg'
+          ? 'bg-[#0a0e27]/90 backdrop-blur-lg shadow-lg shadow-[#FF1744]/10'
           : 'bg-transparent'
       }`}
     >
@@ -60,10 +60,10 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div
-            className="text-2xl font-bold text-[#00d9ff] cursor-pointer"
+            className="text-2xl font-bold text-[#FF1744] cursor-pointer hover:scale-105 transition-transform"
             onClick={() => scrollToSection('home')}
           >
-            <span className="font-orbitron">COSMOS</span>
+            <span className="font-russo">PORTFOLIO</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -72,10 +72,10 @@ const Header = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 font-orbitron ${
                   activeSection === item.id
-                    ? 'text-[#00d9ff] bg-[#00d9ff]/10'
-                    : 'text-gray-300 hover:text-[#00d9ff] hover:bg-white/5'
+                    ? 'text-[#FF1744] bg-[#FF1744]/10 shadow-lg shadow-[#FF1744]/20'
+                    : 'text-gray-300 hover:text-[#FF1744] hover:bg-white/5'
                 }`}
               >
                 {item.label}
@@ -87,7 +87,7 @@ const Header = () => {
           <div className="hidden md:block">
             <Button
               onClick={() => scrollToSection('contact')}
-              className="bg-[#00d9ff] text-black hover:bg-[#00b8d4] transition-colors duration-200"
+              className="bg-[#FF1744] text-white hover:bg-[#D50000] transition-all duration-200 shadow-lg shadow-[#FF1744]/50 hover:shadow-[#FF1744]/70 hover:scale-105"
             >
               Contact
             </Button>
@@ -95,7 +95,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-white p-2"
+            className="md:hidden text-white p-2 hover:text-[#FF1744] transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -105,7 +105,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-[#0a0e27]/95 backdrop-blur-lg border-t border-white/10">
+        <div className="md:hidden bg-[#0a0e27]/95 backdrop-blur-lg border-t border-[#FF1744]/20">
           <div className="px-4 py-4 space-y-2">
             {navItems.map((item) => (
               <button
@@ -113,8 +113,8 @@ const Header = () => {
                 onClick={() => scrollToSection(item.id)}
                 className={`block w-full text-left px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 ${
                   activeSection === item.id
-                    ? 'text-[#00d9ff] bg-[#00d9ff]/10'
-                    : 'text-gray-300 hover:text-[#00d9ff] hover:bg-white/5'
+                    ? 'text-[#FF1744] bg-[#FF1744]/10'
+                    : 'text-gray-300 hover:text-[#FF1744] hover:bg-white/5'
                 }`}
               >
                 {item.label}
@@ -122,7 +122,7 @@ const Header = () => {
             ))}
             <Button
               onClick={() => scrollToSection('contact')}
-              className="w-full mt-2 bg-[#00d9ff] text-black hover:bg-[#00b8d4]"
+              className="w-full mt-2 bg-[#FF1744] text-white hover:bg-[#D50000]"
             >
               Contact
             </Button>
