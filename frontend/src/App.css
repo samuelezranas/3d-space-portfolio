@@ -41,6 +41,33 @@
     }
 }
 
+@keyframes float-slow {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-30px) rotate(5deg);
+    }
+}
+
+@keyframes moon-bounce {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes flicker {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
+
 .animate-fade-in-up {
     animation: fade-in-up 0.6s ease-out forwards;
 }
@@ -57,6 +84,18 @@
     animation: float 3s ease-in-out infinite;
 }
 
+.animate-float-slow {
+    animation: float-slow 6s ease-in-out infinite;
+}
+
+.animate-moon-bounce {
+    animation: moon-bounce 2s ease-in-out infinite;
+}
+
+.animate-flicker {
+    animation: flicker 0.3s ease-in-out infinite;
+}
+
 .animation-delay-200 {
     animation-delay: 0.2s;
 }
@@ -71,6 +110,10 @@
 
 .animation-delay-800 {
     animation-delay: 0.8s;
+}
+
+.animation-delay-1000 {
+    animation-delay: 1s;
 }
 
 /* Smooth Scrolling */
