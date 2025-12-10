@@ -1,68 +1,74 @@
 // Mock data for Space Portfolio
 
 export const personalInfo = {
-  name: "Alex Cosmos",
-  title: "Full Stack Developer & Creative Technologist",
-  tagline: "Exploring the universe of code, one pixel at a time",
-  email: "alex.cosmos@space.dev",
-  location: "Earth, Milky Way",
-  bio: "I'm a passionate developer who loves to create immersive digital experiences. With a background in full-stack development and a keen eye for design, I transform ideas into reality. When I'm not coding, you'll find me stargazing or exploring new technologies.",
+  name: "Your Name",
+  titles: [
+    "Web Developer",
+    "Mobile Developer",
+    "Innovator",
+    "Programmer",
+    "Dream Catcher"
+  ],
+  tagline: "Transforming dreams into digital reality",
+  email: "hello@portfolio.dev",
+  location: "Moon Base Alpha",
+  bio: "I'm a passionate creator who transforms ideas into stunning digital experiences. From web and mobile development to pushing the boundaries of innovation, I bring dreams to life through code and creativity. Every project is a new adventure in the vast universe of possibilities.",
   experience: "5+ years",
-  projects: "20+ completed",
-  clients: "15+ happy clients",
+  projects: "25+ completed",
+  clients: "20+ happy clients",
   social: {
     github: "https://github.com",
     linkedin: "https://linkedin.com",
     twitter: "https://twitter.com",
-    email: "mailto:alex.cosmos@space.dev"
+    email: "mailto:hello@portfolio.dev"
   }
 };
 
 export const skills = [
-  { name: "React", level: 90 },
-  { name: "Node.js", level: 85 },
-  { name: "Python", level: 80 },
-  { name: "TypeScript", level: 85 },
-  { name: "MongoDB", level: 75 },
-  { name: "UI/UX Design", level: 80 },
-  { name: "3D Animation", level: 70 },
-  { name: "AWS", level: 75 }
+  { name: "React & React Native", level: 95 },
+  { name: "JavaScript/TypeScript", level: 90 },
+  { name: "Node.js & Python", level: 88 },
+  { name: "UI/UX Design", level: 85 },
+  { name: "Graphic Design", level: 80 },
+  { name: "Photography", level: 82 },
+  { name: "Video Editing", level: 78 },
+  { name: "Cloud & DevOps", level: 75 }
 ];
 
 export const projects = [
   {
     id: 1,
-    title: "Stellar Dashboard",
-    description: "A comprehensive analytics dashboard with real-time data visualization and interactive charts.",
-    image: "https://images.unsplash.com/photo-1595623654300-b27329804025?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwY29kaW5nfGVufDB8fHx8MTc2NTMzNzU4Nnww&ixlib=rb-4.1.0&q=85",
-    tech: ["React", "D3.js", "Node.js", "MongoDB"],
+    title: "E-Commerce Mobile App",
+    description: "Cross-platform mobile application with seamless shopping experience, real-time notifications, and secure payment integration.",
+    image: "https://images.unsplash.com/photo-1669052700037-db884b37b2d9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwzfHx0ZWNobm9sb2d5JTIwY29kaW5nfGVufDB8fHx8MTc2NTMzNzU4Nnww&ixlib=rb-4.1.0&q=85",
+    tech: ["React Native", "Node.js", "MongoDB", "Stripe"],
     github: "https://github.com",
     live: "https://example.com"
   },
   {
     id: 2,
-    title: "Matrix Code Generator",
-    description: "An AI-powered code generation tool that helps developers write cleaner, more efficient code.",
-    image: "https://images.unsplash.com/photo-1669052700037-db884b37b2d9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwzfHx0ZWNobm9sb2d5JTIwY29kaW5nfGVufDB8fHx8MTc2NTMzNzU4Nnww&ixlib=rb-4.1.0&q=85",
-    tech: ["Python", "TensorFlow", "FastAPI", "React"],
+    title: "AI-Powered Dashboard",
+    description: "Intelligent analytics platform with machine learning insights, predictive analysis, and real-time data visualization.",
+    image: "https://images.unsplash.com/photo-1595623654300-b27329804025?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwY29kaW5nfGVufDB8fHx8MTc2NTMzNzU4Nnww&ixlib=rb-4.1.0&q=85",
+    tech: ["React", "Python", "TensorFlow", "FastAPI"],
     github: "https://github.com",
     live: "https://example.com"
   },
   {
     id: 3,
-    title: "Quantum E-Commerce",
-    description: "Modern e-commerce platform with advanced search, real-time inventory, and seamless checkout.",
+    title: "Social Media Platform",
+    description: "Modern social networking app with real-time messaging, stories, and AI-powered content recommendations.",
     image: "https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg",
-    tech: ["Next.js", "Stripe", "PostgreSQL", "Redis"],
+    tech: ["React Native", "Firebase", "WebSocket", "Redux"],
     github: "https://github.com",
     live: "https://example.com"
   },
   {
     id: 4,
-    title: "Neural Network Visualizer",
-    description: "Interactive tool to visualize and understand neural network architectures and training processes.",
+    title: "Portfolio CMS",
+    description: "Headless CMS for managing creative portfolios with drag-and-drop builder and responsive templates.",
     image: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg",
-    tech: ["TypeScript", "Three.js", "WebGL", "Python"],
+    tech: ["Next.js", "Strapi", "PostgreSQL", "AWS"],
     github: "https://github.com",
     live: "https://example.com"
   }
@@ -71,44 +77,34 @@ export const projects = [
 export const otherPortfolio = [
   {
     id: 1,
-    title: "Open Source Contributions",
-    description: "Active contributor to various open-source projects including React libraries and developer tools.",
-    type: "Open Source",
-    link: "https://github.com"
+    title: "Graphic Design",
+    description: "Creating stunning visual identities, brand materials, and marketing assets that capture attention and communicate messages effectively.",
+    type: "Design",
+    icon: "Palette",
+    link: "https://behance.net"
   },
   {
     id: 2,
-    title: "Tech Blog",
-    description: "Writing about web development, best practices, and emerging technologies.",
-    type: "Writing",
-    link: "https://medium.com"
+    title: "UI/UX Design",
+    description: "Crafting intuitive and beautiful user experiences through research, wireframing, prototyping, and user-centered design principles.",
+    type: "Design",
+    icon: "Figma",
+    link: "https://dribbble.com"
   },
   {
     id: 3,
-    title: "UI Component Library",
-    description: "Published npm package with reusable React components used by 1000+ developers.",
-    type: "Package",
-    link: "https://npmjs.com"
+    title: "Photography",
+    description: "Capturing moments and creating visual stories through portrait, product, landscape, and event photography.",
+    type: "Creative",
+    icon: "Camera",
+    link: "https://instagram.com"
   },
   {
     id: 4,
-    title: "Code Challenges",
-    description: "Regular participation in competitive programming and algorithm challenges.",
-    type: "Competitive",
-    link: "https://leetcode.com"
-  },
-  {
-    id: 5,
-    title: "Design Experiments",
-    description: "Exploring creative coding and generative art using p5.js and Processing.",
+    title: "Video Editing",
+    description: "Producing engaging video content with professional editing, color grading, motion graphics, and storytelling techniques.",
     type: "Creative",
-    link: "https://openprocessing.org"
-  },
-  {
-    id: 6,
-    title: "Tech Talks",
-    description: "Speaker at local meetups and conferences on modern web development.",
-    type: "Speaking",
+    icon: "Video",
     link: "https://youtube.com"
   }
 ];
@@ -116,26 +112,26 @@ export const otherPortfolio = [
 export const timeline = [
   {
     year: "2024",
-    title: "Senior Full Stack Developer",
+    title: "Senior Full Stack & Mobile Developer",
     company: "Tech Innovations Inc.",
-    description: "Leading development of enterprise applications and mentoring junior developers."
+    description: "Leading cross-platform development and architecting scalable solutions."
   },
   {
     year: "2022",
-    title: "Full Stack Developer",
-    company: "Digital Solutions Co.",
-    description: "Built scalable web applications using modern tech stack."
+    title: "Full Stack Developer & Designer",
+    company: "Creative Digital Studio",
+    description: "Built web and mobile applications with focus on user experience."
+  },
+  {
+    year: "2021",
+    title: "Frontend Developer & UI Designer",
+    company: "Digital Agency",
+    description: "Developed responsive interfaces and designed user experiences."
   },
   {
     year: "2020",
-    title: "Frontend Developer",
-    company: "Creative Agency",
-    description: "Developed responsive and interactive user interfaces."
-  },
-  {
-    year: "2019",
-    title: "Started Career",
-    company: "Freelance",
-    description: "Began journey as a freelance web developer."
+    title: "Started Journey",
+    company: "Freelance Developer & Designer",
+    description: "Began creating digital experiences and building dreams."
   }
 ];
