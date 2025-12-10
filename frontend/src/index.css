@@ -24,8 +24,12 @@ code {
     font-family: 'Orbitron', sans-serif;
 }
 
-.font-exo {
-    font-family: 'Exo 2', sans-serif;
+.font-russo {
+    font-family: 'Russo One', sans-serif;
+}
+
+.font-rajdhani {
+    font-family: 'Rajdhani', sans-serif;
 }
 
 @layer base {
