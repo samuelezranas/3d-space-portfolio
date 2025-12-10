@@ -42,7 +42,7 @@ const Work = () => {
           className="absolute inset-0 opacity-10"
           style={{
             backgroundImage:
-              'radial-gradient(circle at 2px 2px, rgba(0, 217, 255, 0.3) 1px, transparent 0)',
+              'radial-gradient(circle at 2px 2px, rgba(255, 23, 68, 0.3) 1px, transparent 0)',
             backgroundSize: '40px 40px'
           }}
         />
@@ -51,13 +51,12 @@ const Work = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4 font-orbitron">
-            Featured <span className="text-[#00d9ff]">Work</span>
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 font-russo">
+            Featured <span className="text-[#FF1744]">Work</span>
           </h2>
-          <div className="w-24 h-1 bg-[#00d9ff] mx-auto mb-6" />
+          <div className="w-24 h-1 bg-[#FF1744] mx-auto mb-6" />
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Explore my latest projects showcasing full-stack development, creative problem-solving,
-            and modern technologies.
+            Explore my latest projects showcasing innovation, creativity, and cutting-edge technology.
           </p>
         </div>
 
@@ -66,7 +65,7 @@ const Work = () => {
           {projects.map((project, index) => (
             <Card
               key={project.id}
-              className={`group bg-white/5 backdrop-blur-sm border-white/10 overflow-hidden hover:bg-white/10 transition-all duration-500 ${
+              className={`group bg-white/5 backdrop-blur-sm border-[#FF1744]/20 overflow-hidden hover:bg-[#FF1744]/10 hover:border-[#FF1744]/50 transition-all duration-500 ${
                 isVisible ? 'animate-fade-in-up' : 'opacity-0'
               }`}
               style={{ animationDelay: `${index * 150}ms` }}
@@ -85,7 +84,7 @@ const Work = () => {
                   <Button
                     onClick={() => window.open(project.live, '_blank')}
                     size="sm"
-                    className="bg-[#00d9ff] text-black hover:bg-[#00b8d4] transform hover:scale-110 transition-transform"
+                    className="bg-[#FF1744] text-white hover:bg-[#D50000] transform hover:scale-110 transition-all shadow-lg shadow-[#FF1744]/50"
                   >
                     <ExternalLink size={16} className="mr-2" />
                     Live Demo
@@ -94,7 +93,7 @@ const Work = () => {
                     onClick={() => window.open(project.github, '_blank')}
                     size="sm"
                     variant="outline"
-                    className="border-[#00d9ff] text-[#00d9ff] hover:bg-[#00d9ff]/10 transform hover:scale-110 transition-transform"
+                    className="border-2 border-[#FF1744] text-[#FF1744] hover:bg-[#FF1744]/10 transform hover:scale-110 transition-all"
                   >
                     <Github size={16} className="mr-2" />
                     Code
@@ -104,7 +103,7 @@ const Work = () => {
 
               {/* Project Info */}
               <div className="p-6 space-y-4">
-                <h3 className="text-2xl font-bold text-white group-hover:text-[#00d9ff] transition-colors duration-200">
+                <h3 className="text-2xl font-bold text-white group-hover:text-[#FF1744] transition-colors duration-200 font-russo">
                   {project.title}
                 </h3>
                 <p className="text-gray-400 leading-relaxed">{project.description}</p>
@@ -115,7 +114,7 @@ const Work = () => {
                     <Badge
                       key={techIndex}
                       variant="outline"
-                      className="border-[#00d9ff]/30 text-[#00d9ff] bg-[#00d9ff]/5 hover:bg-[#00d9ff]/10 transition-colors"
+                      className="border-[#FF1744]/30 text-[#FF1744] bg-[#FF1744]/5 hover:bg-[#FF1744]/10 transition-colors font-orbitron"
                     >
                       {tech}
                     </Badge>
